@@ -1,0 +1,25 @@
+body{
+    font-weight: 400;
+    height: 100vh;
+    color: #333;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.login-wrapper{
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+    border-radius: 9px;
+    overflow: hidden;
+    padding: 10%;
+}
+
+.login-container.container{
+    margin-top: 10%;
+}
+
+.error-login .error-text, .error-noinput .error-text{
+    color: #bf2e34;
+    font-weight: bold;
+}

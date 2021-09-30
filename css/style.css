@@ -1,0 +1,35 @@
+@media (min-width: 1200px){
+.container{
+    max-width: 900px;
+}
+.login-container.container{
+    max-width: 600px;
+}
+}
+.userinput-screen .user-info{
+    font-style: italic;
+}
+
+.main-page.container{
+    margin-top: 20%;
+}
+.main-page .loader{
+    font-weight: bold;
+    color: rgb(39, 35, 35);
+}
+.text-bold{
+    font-weight: bold;
+}
+.userform-wrapper.container{
+    margin-top: 30px;
+}
+.personal-profile .address-text{
+    margin-bottom: 2px;
+}
+.personal-profile .address-article p{
+    margin-bottom: 0;
+}
+.user-sign{
+    padding-left: 50px;
+    margin-left: 50px;
+}
