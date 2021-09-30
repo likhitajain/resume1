@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>User Info</title>
+</head>
+<body>
+    <!-- User Information Page -->
+    <section class="container">
+        <section class="userinput-screen mt-2">
+            <h1 class="mt-3 text-center">Custom Resume Generator</h1>
+            <p class="user-info text-center mb-4">Please enter the below details for generating the resume</p>
+            <hr style="height:2px; border-width:0; background-color:#7d7070">
+            <form>
+                <!-- Personal Details -->
+                <section class="personal-details mb-4">
+                    <p class="text-bold">Personal Details</p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control" id="firstName">
+                        <input type="text" aria-label="Last name" class="form-control" id="lastName">
+                    </div>
+                    <section class="row g-3">
+                        <div class="col-md-6">
+                          <label for="userEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="userEmail">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="userPassword" class="form-label">Mobile</label>
+                          <input type="tel" class="form-control" maxlength="10" id="userMobile">
+                        </div>
+                    </section>
+                </section>
+                <!-- Summary -->
+                <section class="summary mb-4">
+                    <p class="text-bold">Summary</p>
+                    <div class="input-group">
+                      <span class="input-group-text">Objective</span>
+                      <textarea class="form-control" aria-label="With textarea" id="objective"></textarea>
+                  </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Professional Summary 1*</span>
+                        <textarea class="form-control" aria-label="With textarea" id="summary1"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text">Summary 2*</span>
+                      <textarea class="form-control" aria-label="With textarea" id="summary2"></textarea>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-text">Summary 3*</span>
+                    <textarea class="form-control" aria-label="With textarea" id="summary3"></textarea>
+                </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Skills</span>
+                        <textarea class="form-control" aria-label="With textarea" id="skills"></textarea>
+                    </div>
+                </section>
+                <!-- Educational Details -->
+                <section class="educational-details mb-4">
+                  <p class="text-bold">Educational Details</p>
+                  <div class="row g-3 mb-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Degree or others" aria-label="Degree or any other equivalent" id="degree">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Institution Name" aria-label="Institution Name" id="institutionName">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Year of passing" aria-label="Year of passing" id="passingYearDegree">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Grade in cgpa" aria-label="Grade in cgpa" id="cgpa">
+                    </div>
+                  </div>
+                  <div class="row g-3 mb-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Higher Secondary School Name" aria-label="Higher Secondary School Name" id="hsc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Year of passing" aria-label="Year of passing" id="passingYearHsc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Marks in percentage" aria-label="Marks in percentage" id="hscPercentage">
+                    </div>
+                  </div>
+                   <div class="row g-3 mb-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Secondary School Name" aria-label="Secondary School Name" id="ssc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Year of passing" aria-label="Year of passing" id="passingYearSsc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Marks in percentage" aria-label="Marks in percentage" id="sscPercentage">
+                    </div>
+                  </div>
+                </section>
+                <!-- Communication Details -->
+                <section class="communication mb-4">
+                    <p class="text-bold">Communication Details</p>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>TamilNadu</option>
+                              <option>Karnataka</option>
+                              <option>Kerala</option>
+                              <option>Maharashtra</option>
+                              <option>Punjab</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                </section>
+                <!-- Agree - Terms and Conditions -->
+                <section class="terms and condition mb-4">
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            I hereby declare that the information given above is true to the best of my knowledge and belief.
+                        </label>
+                    </div>
+                </section>
+                <!-- Error Message - Submit Handler -->
+                <section class="error-msg d-none" id="errorDOM">
+                  <div class="alert alert-danger" role="alert">
+                    Please enter all the fields!
+                  </div>
+                </section>
+                <!-- Submit Button -->
+                <section class="submit-section mb-5">
+                    <div class="col-12 text-end">
+                        <button class="btn btn-primary" id="submitButton" type="submit">Submit form</button>
+                      </div>
+                </section>
+            </form>
+        </section>
+    </section>
+    <!-- Bootstrap and customise script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
